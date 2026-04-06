@@ -1,81 +1,53 @@
-const pillars = [
-  "Fight media production for athletes, gyms, and promoters",
-  "Training content systems built to grow reach and bookings",
-  "A clean handoff from capture to published digital assets",
-];
-
-const domains = [
-  "combat2camera.org",
-  "combat2camera.com",
-  "combattocamera.org",
-  "combattocamera.com",
-];
-
 export default function Home() {
   return (
-    <main className="page-shell">
-      <section className="hero">
+    <main className="coming-page">
+      <section className="coming-hero">
+        <div className="signal-bar" />
         <p className="eyebrow">Combat2Camera</p>
-        <h1>Media systems for fighters, coaches, and combat brands.</h1>
+        <p className="status-chip">Coming Soon</p>
+        <h1>Built for the fight world. Framed for the screen.</h1>
         <p className="lead">
-          This site is now set up as the production base for Combat2Camera. The
-          app is ready for GitHub, Vercel, Supabase, and your custom domains.
+          Combat2Camera is preparing a digital home for fight media, athlete
+          storytelling, gym content, and event-focused production.
         </p>
 
         <div className="hero-actions">
           <a className="button button-primary" href="mailto:hello@combat2camera.org">
-            Contact
+            Contact Us
           </a>
-          <a className="button button-secondary" href="#infrastructure">
-            View infrastructure
+          <a className="button button-secondary" href="https://instagram.com" target="_blank" rel="noreferrer">
+            Follow the Build
           </a>
         </div>
       </section>
 
-      <section className="panel">
-        <div className="panel-header">
-          <p className="eyebrow">Core Focus</p>
-          <h2>Built to support both the brand and the business backend.</h2>
-        </div>
+      <section className="coming-grid">
+        <article className="coming-card">
+          <p className="card-label">What&apos;s Launching</p>
+          <h2>A sharper brand site for fighters, coaches, gyms, and promoters.</h2>
+          <p>
+            The full experience is in development now, including brand
+            positioning, service pages, and a production-ready backend.
+          </p>
+        </article>
 
-        <div className="pillar-grid">
-          {pillars.map((pillar) => (
-            <article className="card" key={pillar}>
-              <p>{pillar}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+        <article className="coming-card coming-card-accent">
+          <p className="card-label">Primary Domain</p>
+          <h2>combat2camera.org</h2>
+          <p>
+            All alternate domains route here as the canonical public home for
+            Combat2Camera.
+          </p>
+        </article>
 
-      <section className="panel" id="infrastructure">
-        <div className="panel-header">
-          <p className="eyebrow">Infrastructure</p>
-          <h2>Current deployment and domain plan.</h2>
-        </div>
-
-        <div className="infra-grid">
-          <article className="card">
-            <h3>Primary domain</h3>
-            <p>
-              Use <strong>combat2camera.org</strong> as the canonical production
-              domain in Vercel.
-            </p>
-          </article>
-
-          <article className="card">
-            <h3>Redirect domains</h3>
-            <ul>
-              {domains.slice(1).map((domain) => (
-                <li key={domain}>{domain}</li>
-              ))}
-            </ul>
-          </article>
-
-          <article className="card">
-            <h3>Backend</h3>
-            <p>Supabase will provide auth, storage, and database services.</p>
-          </article>
-        </div>
+        <article className="coming-card">
+          <p className="card-label">In Progress</p>
+          <ul className="coming-list">
+            <li>Homepage and brand direction</li>
+            <li>Service and inquiry flow</li>
+            <li>Supabase-backed site features</li>
+          </ul>
+        </article>
       </section>
     </main>
   );
