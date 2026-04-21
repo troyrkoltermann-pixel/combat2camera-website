@@ -16,9 +16,9 @@ export function HeroSection() {
           <Link className="button button-primary" href="/support">
             Support the Mission
           </Link>
-          <a className="button button-secondary" href="#programs">
+          <Link className="button button-secondary" href="/join-a-workshop">
             Join a Workshop
-          </a>
+          </Link>
         </div>
         <p className="trust-line">
           Creating structured experiences that lead to lasting impact for veterans.
