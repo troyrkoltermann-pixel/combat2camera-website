@@ -223,6 +223,7 @@ img {
 
 .split-section,
 .programs-section,
+.impact-section,
 .founder-section,
 .testimonials-section,
 .donation-cta {
@@ -271,6 +272,7 @@ img {
 }
 
 .program-card,
+.impact-card,
 .testimonial-card {
   min-height: 18rem;
   padding: 1.5rem;
@@ -289,10 +291,58 @@ img {
 }
 
 .program-card p,
+.impact-card span,
 .testimonial-card blockquote {
   margin: 0;
   color: var(--muted);
   line-height: 1.75;
+}
+
+.impact-section {
+  padding-top: 0;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.impact-card {
+  min-height: 20rem;
+  background:
+    linear-gradient(180deg, rgba(89, 98, 75, 0.12), rgba(255, 255, 255, 0.42)),
+    rgba(255, 255, 255, 0.34);
+}
+
+.impact-card p {
+  margin: 0 0 2rem;
+  color: var(--clay-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.impact-card h3 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.partner-strip {
+  margin-top: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px dashed rgba(17, 19, 18, 0.22);
+  border-radius: 1.25rem;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.partner-strip p {
+  margin: 0;
+  line-height: 1.6;
 }
 
 .gallery-strip {
@@ -436,6 +486,7 @@ img {
   }
 
   .program-grid,
+  .impact-grid,
   .testimonial-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -477,6 +528,7 @@ img {
   }
 
   .program-grid,
+  .impact-grid,
   .testimonial-grid,
   .gallery-strip {
     grid-template-columns: 1fr;
