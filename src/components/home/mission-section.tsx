@@ -12,13 +12,14 @@ export function MissionSection() {
       <section className="split-section">
         <div>
           <p className="eyebrow">Who We Serve</p>
-          <h2>Veterans first. Active military and families alongside them.</h2>
+          <h2>Serving veterans, service members, and their families.</h2>
         </div>
         <p>
-          Combat 2 Camera creates photography-centered programs for veterans,
-          with support for active military members and families who are part of
-          the healing journey. Our work centers on creative recovery, social
-          connection, and the dignity of being seen through your own story.
+          Combat 2 Camera provides photography-centered programs for veterans,
+          active duty service members, National Guard and Reserve members, and
+          the families who support them. Our work centers on creative recovery,
+          social connection, resilience, and the dignity of being seen through
+          your own story.
         </p>
       </section>
     </>

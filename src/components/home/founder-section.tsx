@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function FounderSection() {
   return (
@@ -15,16 +16,22 @@ export function FounderSection() {
         <p className="eyebrow">Founder Story</p>
         <h2>Built from lived experience.</h2>
         <p>
-          Combat 2 Camera was founded from the lived experience of a combat
-          veteran navigating PTSD and rediscovering purpose through photography.
-          What began as a personal part of healing is becoming a pathway for
-          other veterans to reconnect with creativity, community, and identity.
+          After multiple deployments to Iraq, Troy R. Koltermann came home
+          carrying the weight of combat and navigating PTSD. Traditional care
+          helped in some ways, but photography became the practice that helped
+          him slow down, step outside, and focus on what was right in front of
+          him.
         </p>
         <p>
-          The goal is not simply to teach camera settings. It is to create a
-          space where veterans can slow down, observe, make meaning, and share
-          work they are proud to put into the world.
+          What started as quiet moments with a camera became a way forward. It
+          led him back into connection, into education, into award-winning
+          photography, and ultimately into building Combat 2 Camera so other
+          veterans could find healing, community, and purpose one frame at a
+          time.
         </p>
+        <Link className="text-link" href="/founder-story">
+          Read Troy&apos;s full story
+        </Link>
       </div>
     </section>
   );

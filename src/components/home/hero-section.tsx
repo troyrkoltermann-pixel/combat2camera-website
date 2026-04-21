@@ -17,12 +17,9 @@ export function HeroSection() {
             Donate
           </Link>
           <a className="button button-secondary" href="#mission">
-            Learn Our Mission
+            Learn More
           </a>
         </div>
-        <p className="status-note">
-          Registered Utah charity. Federal 501(c)(3) determination pending.
-        </p>
       </div>
 
       <div className="hero-media" aria-label="Combat 2 Camera program photos">
@@ -36,7 +33,7 @@ export function HeroSection() {
         />
         <Image
           className="hero-image hero-image-inset"
-          src="/assets/photos/C2C_Web__L3A0384_Sep 28 2025.jpg"
+          src="/assets/photos/C2C_Web_DTCF0024_Oct 05 2025.jpg"
           alt="Combat 2 Camera portrait moment"
           width={420}
           height={520}
