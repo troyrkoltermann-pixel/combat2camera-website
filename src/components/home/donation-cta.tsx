@@ -4,7 +4,7 @@ export function DonationCta() {
   return (
     <section className="donation-cta">
       <p className="eyebrow">Support The Mission</p>
-      <h2>Help build workshops, retreats, exhibitions, and mentorship for veterans.</h2>
+      <h2>Help build workshops, retreats, exhibitions, and mentorship for veterans</h2>
       <p>
         Donations will open when Combat 2 Camera receives federal 501(c)(3)
         confirmation. Until then, you can contact us about support,

@@ -14,7 +14,7 @@ export function FounderSection() {
       </div>
       <div className="founder-copy">
         <p className="eyebrow">Founder Story</p>
-        <h2>Built from lived experience.</h2>
+        <h2>Built from lived experience</h2>
         <p>
           After multiple deployments to Iraq, Troy R. Koltermann came home
           carrying the weight of combat and navigating PTSD. Traditional care

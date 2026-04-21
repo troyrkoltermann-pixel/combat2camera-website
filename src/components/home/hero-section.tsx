@@ -6,20 +6,23 @@ export function HeroSection() {
     <section className="hero-home">
       <div className="hero-copy">
         <p className="eyebrow">Veteran healing through photography</p>
-        <h1>Helping veterans find purpose on both sides of the lens.</h1>
+        <h1>When the mission ends, the battle doesn&apos;t</h1>
         <p className="lead">
-          Combat 2 Camera empowers veterans to rediscover purpose and resilience
-          through photography as a form of art therapy, meaningful social
-          connection, and opportunities to exhibit their work.
+          For veterans struggling to reconnect, we use photography to help
+          rebuild focus, reduce isolation, and find their place in the world
+          again.
         </p>
         <div className="hero-actions">
-          <Link className="button button-primary" href="/donate">
-            Donate
+          <Link className="button button-primary" href="/support">
+            Support the Mission
           </Link>
-          <a className="button button-secondary" href="#mission">
-            Learn More
+          <a className="button button-secondary" href="#programs">
+            Join a Workshop
           </a>
         </div>
+        <p className="trust-line">
+          Creating structured experiences that lead to lasting impact for veterans.
+        </p>
       </div>
 
       <div className="hero-media" aria-label="Combat 2 Camera program photos">

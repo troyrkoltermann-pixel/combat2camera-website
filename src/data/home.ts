@@ -1,23 +1,47 @@
 export const programs = [
   {
-    title: "Workshops",
+    label: "Program 1",
+    title: "Foundations of Photography",
     description:
-      "Hands-on photography experiences that give veterans practical tools for creative expression, presence, and connection.",
+      "A beginner-friendly introduction focused on composition, storytelling, and learning how to see the world through a new lens.",
+    gains: [
+      "Rebuild focus through structured learning",
+      "A creative outlet for expression",
+      "Confidence using a camera",
+    ],
   },
   {
-    title: "Retreats",
+    label: "Program 2",
+    title: "Intermediate Photography",
     description:
-      "Immersive, photography-centered retreats designed to create space for reflection, community, and renewed purpose.",
+      "A deeper dive into camera settings, lighting, and technique for those ready to build on their foundation.",
+    gains: [
+      "Stronger technical skills",
+      "Greater creative control",
+      "Continued structure and routine",
+    ],
   },
   {
-    title: "Exhibitions",
+    label: "Program 3",
+    title: "Workshops and Photo Experiences",
     description:
-      "Public opportunities for veterans to share their work, reclaim authorship of their stories, and be seen by the community.",
+      "Hands-on experiences including photo walks, group sessions, and real-world shooting opportunities.",
+    gains: [
+      "Connection with other veterans",
+      "Real-world application of skills",
+      "A renewed sense of purpose through shared experiences",
+    ],
   },
   {
-    title: "Mentorship",
+    label: "Program 4",
+    title: "Exhibitions and Showcases",
     description:
-      "Continued guidance that helps participants keep building confidence, skill, and creative identity after each program.",
+      "Opportunities for veterans to share their work, tell their stories, and be recognized through curated exhibits.",
+    gains: [
+      "A platform to be seen and heard",
+      "Confidence and pride in their work",
+      "Continued connection to the community",
+    ],
   },
 ];
 

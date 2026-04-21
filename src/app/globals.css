@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600;700&display=swap");
+
 :root {
   --ink: #101828;
   --paper: #ffffff;
@@ -26,7 +28,8 @@ body {
   min-height: 100vh;
   background: #ffffff;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -124,9 +127,9 @@ img {
 }
 
 .brand img {
-  width: 10.5rem;
+  width: 16rem;
   height: auto;
-  max-height: 4.4rem;
+  max-height: 5.4rem;
   object-fit: contain;
   object-position: left center;
 }
@@ -217,9 +220,10 @@ img {
 }
 
 .hero-home h1 {
-  max-width: 12ch;
+  max-width: 14ch;
   color: var(--navy-dark);
-  font-size: clamp(3.5rem, 7vw, 7.2rem);
+  font-size: clamp(2.75rem, 5.4vw, 5.8rem);
+  line-height: 1;
 }
 
 .lead {
@@ -235,6 +239,15 @@ img {
   flex-wrap: wrap;
   gap: 0.85rem;
   margin-top: 2rem;
+}
+
+.trust-line {
+  max-width: 42rem;
+  margin: 1rem 0 0;
+  color: var(--navy);
+  font-size: 0.98rem;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 .hero-media {
@@ -275,8 +288,27 @@ img {
 }
 
 .mission-band h2 {
-  max-width: 15ch;
+  max-width: 12ch;
   font-size: clamp(2.7rem, 6vw, 6rem);
+}
+
+.mission-story {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.mission-story div {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.mission-story p {
+  margin: 0;
+  color: #dce8f8;
+  font-size: clamp(1.05rem, 1.7vw, 1.24rem);
+  line-height: 1.75;
 }
 
 .split-section,
@@ -307,6 +339,7 @@ img {
 }
 
 .split-section p,
+.serve-copy li,
 .founder-copy p,
 .donation-cta p,
 .donate-panel p {
@@ -314,6 +347,27 @@ img {
   color: var(--muted);
   font-size: 1.08rem;
   line-height: 1.85;
+}
+
+.serve-copy {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.serve-copy ul {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.serve-copy li::marker {
+  color: var(--red);
+}
+
+.serve-copy .closing-line {
+  color: var(--navy);
+  font-weight: 500;
 }
 
 .section-heading {
@@ -342,10 +396,19 @@ img {
 
 .program-card span {
   display: block;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: var(--red);
   font-size: 1.3rem;
   font-weight: 700;
+}
+
+.program-label {
+  margin: 0 0 1rem;
+  color: var(--navy);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
 .program-card p,
@@ -354,6 +417,39 @@ img {
   margin: 0;
   color: var(--muted);
   line-height: 1.75;
+}
+
+.program-gains {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1.25rem;
+}
+
+.program-gains strong {
+  color: var(--navy);
+  font-weight: 500;
+}
+
+.program-gains ul {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.program-gains li::marker {
+  color: var(--red);
+}
+
+.program-closing {
+  max-width: 52rem;
+  margin: 2rem 0 0;
+  color: var(--navy);
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 500;
+  line-height: 1.55;
 }
 
 .impact-section {
@@ -820,6 +916,7 @@ img {
 
   .hero-home,
   .split-section,
+  .mission-story,
   .founder-section,
   .story-hero-grid,
   .two-column-content,
@@ -864,7 +961,7 @@ img {
   }
 
   .brand img {
-    width: 7.5rem;
+    width: 11.5rem;
   }
 
   .hero-home {
@@ -874,7 +971,7 @@ img {
   }
 
   .hero-home h1 {
-    font-size: clamp(3rem, 15vw, 4.7rem);
+    font-size: clamp(2.55rem, 12vw, 4rem);
   }
 
   .hero-media {
@@ -923,4 +1020,72 @@ img {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+}
+
+/* Typography system */
+:is(
+  h1,
+  h2,
+  h3,
+  .hero-home h1,
+  .mission-band h2,
+  .split-section h2,
+  .section-heading h2,
+  .founder-copy h2,
+  .donation-cta h2,
+  .donate-panel h1,
+  .story-hero h1,
+  .interior-hero h1,
+  .two-column-content h2,
+  .info-cards h2,
+  .program-detail-grid h2,
+  .support-list h2,
+  .support-cta-panel h2,
+  .contact-panel h2,
+  .policy-content h2,
+  .impact-card h3
+) {
+  font-family: "Montserrat", sans-serif;
+}
+
+:is(
+  .hero-home h1,
+  .mission-band h2,
+  .split-section h2,
+  .section-heading h2,
+  .founder-copy h2,
+  .donation-cta h2,
+  .donate-panel h1,
+  .story-hero h1,
+  .interior-hero h1
+) {
+  font-weight: 700;
+}
+
+:is(
+  .impact-card h3,
+  .two-column-content h2,
+  .info-cards h2,
+  .program-detail-grid h2,
+  .support-list h2,
+  .support-cta-panel h2,
+  .contact-panel h2,
+  .policy-content h2
+) {
+  font-weight: 600;
+}
+
+:is(
+  .button,
+  .nav-links,
+  .utility-bar a,
+  .program-card span,
+  .text-link,
+  .testimonial-card figcaption,
+  .story-back-link,
+  .site-footer nav,
+  .skip-link
+) {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
 }

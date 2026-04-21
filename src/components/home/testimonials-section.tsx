@@ -5,7 +5,7 @@ export function TestimonialsSection() {
     <section className="testimonials-section">
       <div className="section-heading">
         <p className="eyebrow">Participant Voices</p>
-        <h2>Photography gives veterans another language for healing.</h2>
+        <h2>Photography gives veterans another language for healing</h2>
       </div>
       <div className="testimonial-grid">
         {testimonials.map((testimonial) => (

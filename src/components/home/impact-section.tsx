@@ -5,7 +5,7 @@ export function ImpactSection() {
     <section className="impact-section" id="impact">
       <div className="section-heading">
         <p className="eyebrow">How Support Helps</p>
-        <h2>Every contribution should move a veteran closer to creative purpose.</h2>
+        <h2>Every contribution should move a veteran closer to creative purpose</h2>
       </div>
 
       <div className="impact-grid">
