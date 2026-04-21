@@ -1,8 +1,23 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+import { SiteFooter } from "@/components/site-footer";
+
+export const metadata: Metadata = {
+  title: "Donations Opening Soon",
+  description:
+    "Combat 2 Camera is preparing to accept donations once federal 501(c)(3) confirmation is complete.",
+  alternates: {
+    canonical: "/donate",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
 
 export default function DonatePage() {
   return (
-    <main className="donate-page">
+    <main className="donate-page" id="main-content">
       <section className="donate-panel">
         <p className="eyebrow">Donations Opening Soon</p>
         <h1>Combat 2 Camera is preparing to accept donations.</h1>
@@ -24,6 +39,7 @@ export default function DonatePage() {
           </a>
         </div>
       </section>
+      <SiteFooter />
     </main>
   );
 }

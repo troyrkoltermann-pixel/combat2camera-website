@@ -20,10 +20,11 @@ export function SiteHeader() {
           />
         </Link>
         <nav className="nav-links" aria-label="Homepage sections">
-          <a href="#mission">Who We Are</a>
-          <a href="#programs">How We Help</a>
-          <a href="#impact">Our Impact</a>
+          <Link href="/about">Who We Are</Link>
+          <Link href="/programs">Programs</Link>
+          <Link href="/support">Support</Link>
           <Link href="/founder-story">Founder Story</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
         <Link className="button button-primary" href="/donate">
           Donate

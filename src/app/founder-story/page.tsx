@@ -1,15 +1,44 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+import { JsonLd } from "@/components/json-ld";
+import { SiteFooter } from "@/components/site-footer";
+import { breadcrumbJsonLd, founderJsonLd, siteConfig } from "@/lib/seo";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Founder Story | Combat 2 Camera",
   description:
     "The founder story behind Combat 2 Camera and Troy R. Koltermann's journey from combat veteran to photography-based healing work.",
+  alternates: {
+    canonical: "/founder-story",
+  },
+  openGraph: {
+    type: "article",
+    url: `${siteConfig.url}/founder-story`,
+    title: "Founder Story | Combat 2 Camera",
+    description:
+      "Troy R. Koltermann's story of combat, PTSD, photography, and the mission behind Combat 2 Camera.",
+    images: [
+      {
+        url: "/assets/photos/troy_koltermann Headshot.JPG",
+        width: 2730,
+        height: 4096,
+        alt: "Troy R. Koltermann, founder of Combat 2 Camera",
+      },
+    ],
+  },
 };
 
 export default function FounderStoryPage() {
   return (
-    <main className="story-page">
+    <main className="story-page" id="main-content">
+      <JsonLd data={founderJsonLd} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", url: siteConfig.url },
+          { name: "Founder Story", url: `${siteConfig.url}/founder-story` },
+        ])}
+      />
       <section className="story-hero">
         <Link className="story-back-link" href="/">
           Back to Home
@@ -110,6 +139,7 @@ export default function FounderStoryPage() {
           <span>Founder, Combat 2 Camera</span>
         </footer>
       </article>
+      <SiteFooter />
     </main>
   );
 }

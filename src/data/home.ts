@@ -42,19 +42,19 @@ export const testimonials = [
 export const galleryImages = [
   {
     src: "/assets/photos/C2C_Web__L3A9478_Sep 15 2025.jpg",
-    alt: "Combat 2 Camera participant photographing outdoors",
+    alt: "A veteran photographing outdoors during a Combat 2 Camera field workshop",
   },
   {
     src: "/assets/photos/C2C_Web__L3A0304_Sep 27 2025.jpg",
-    alt: "Veterans participating in a photography workshop",
+    alt: "Workshop participants gathered outside while learning photography together",
   },
   {
     src: "/assets/photos/C2C_Web_DTCF0031_Oct 05 2025.jpg",
-    alt: "Combat 2 Camera workshop moment",
+    alt: "A Combat 2 Camera participant reviewing a camera during a workshop",
   },
   {
     src: "/assets/photos/C2C_Web__L3A9615_Sep 18 2025.jpg",
-    alt: "Participant creating photographs during Combat 2 Camera",
+    alt: "A participant composing a photograph during a guided outdoor session",
   },
 ];
 

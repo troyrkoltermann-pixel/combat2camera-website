@@ -26,7 +26,7 @@ export function HeroSection() {
         <Image
           className="hero-image hero-image-main"
           src="/assets/photos/C2C_Web__L3A9646_Sep 18 2025.jpg"
-          alt="Veteran participating in a Combat 2 Camera photography program"
+          alt="A Combat 2 Camera participant photographing a red rock landscape"
           width={900}
           height={720}
           priority
@@ -34,7 +34,7 @@ export function HeroSection() {
         <Image
           className="hero-image hero-image-inset"
           src="/assets/photos/C2C_Web_DTCF0024_Oct 05 2025.jpg"
-          alt="Combat 2 Camera portrait moment"
+          alt="A participant standing outdoors during a Combat 2 Camera workshop"
           width={420}
           height={520}
         />

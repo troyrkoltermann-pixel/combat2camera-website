@@ -6,11 +6,16 @@ import { ImpactSection } from "@/components/home/impact-section";
 import { MissionSection } from "@/components/home/mission-section";
 import { ProgramsSection } from "@/components/home/programs-section";
 import { TestimonialsSection } from "@/components/home/testimonials-section";
+import { JsonLd } from "@/components/json-ld";
+import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 
 export default function Home() {
   return (
-    <main className="site-page">
+    <main className="site-page" id="main-content">
+      <JsonLd data={organizationJsonLd} />
+      <JsonLd data={websiteJsonLd} />
       <SiteHeader />
       <HeroSection />
       <MissionSection />
@@ -20,6 +25,7 @@ export default function Home() {
       <FounderSection />
       <TestimonialsSection />
       <DonationCta />
+      <SiteFooter />
     </main>
   );
 }
