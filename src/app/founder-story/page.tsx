@@ -3,31 +3,23 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/json-ld";
 import { SiteFooter } from "@/components/site-footer";
-import { breadcrumbJsonLd, founderJsonLd, siteConfig } from "@/lib/seo";
+import { breadcrumbJsonLd, buildMetadata, founderJsonLd, pageJsonLd, siteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Founder Story | Combat 2 Camera",
-  description:
-    "The founder story behind Combat 2 Camera and Troy R. Koltermann's journey from combat veteran to photography-based healing work.",
-  alternates: {
-    canonical: "/founder-story",
+const founderDescription =
+  "The founder story behind Combat 2 Camera and Troy R. Koltermann's journey from combat veteran to photography-based healing work.";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Founder Story",
+  description: founderDescription,
+  path: "/founder-story",
+  type: "article",
+  image: {
+    url: "/assets/photos/troy_koltermann Headshot.JPG",
+    width: 2730,
+    height: 4096,
+    alt: "Troy R. Koltermann, founder of Combat 2 Camera",
   },
-  openGraph: {
-    type: "article",
-    url: `${siteConfig.url}/founder-story`,
-    title: "Founder Story | Combat 2 Camera",
-    description:
-      "Troy R. Koltermann's story of combat, PTSD, photography, and the mission behind Combat 2 Camera.",
-    images: [
-      {
-        url: "/assets/photos/troy_koltermann Headshot.JPG",
-        width: 2730,
-        height: 4096,
-        alt: "Troy R. Koltermann, founder of Combat 2 Camera",
-      },
-    ],
-  },
-};
+});
 
 export default function FounderStoryPage() {
   return (
@@ -38,6 +30,13 @@ export default function FounderStoryPage() {
           { name: "Home", url: siteConfig.url },
           { name: "Founder Story", url: `${siteConfig.url}/founder-story` },
         ])}
+      />
+      <JsonLd
+        data={pageJsonLd({
+          name: "Founder Story",
+          description: founderDescription,
+          path: "/founder-story",
+        })}
       />
       <section className="story-hero">
         <Link className="story-back-link" href="/">

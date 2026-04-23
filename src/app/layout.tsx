@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Combat 2 Camera | Veteran Healing Through Photography",
+    default: siteConfig.defaultTitle,
     template: "%s | Combat 2 Camera",
   },
   description: siteConfig.description,
@@ -22,22 +22,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Combat 2 Camera | Veteran Healing Through Photography",
+    title: siteConfig.defaultTitle,
     description: siteConfig.description,
-    images: [
-      {
-        url: "/assets/photos/C2C_Web__L3A9646_Sep 18 2025.jpg",
-        width: 2048,
-        height: 1638,
-        alt: "A Combat 2 Camera participant photographing a red rock landscape",
-      },
-    ],
+    images: [siteConfig.defaultOgImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Combat 2 Camera | Veteran Healing Through Photography",
+    title: siteConfig.defaultTitle,
     description: siteConfig.description,
-    images: ["/assets/photos/C2C_Web__L3A9646_Sep 18 2025.jpg"],
+    images: [siteConfig.defaultOgImage.url],
   },
   robots: {
     index: true,

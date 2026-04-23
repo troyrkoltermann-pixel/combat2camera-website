@@ -2,20 +2,15 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/json-ld";
 import { PageShell } from "@/components/page-shell";
-import { breadcrumbJsonLd, siteConfig } from "@/lib/seo";
+import { breadcrumbJsonLd, buildMetadata, siteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Join a Workshop",
   description:
     "Combat 2 Camera workshop registration is opening soon for veterans interested in photography-based connection, focus, and purpose.",
-  alternates: {
-    canonical: "/join-a-workshop",
-  },
-  robots: {
-    index: false,
-    follow: true,
-  },
-};
+  path: "/join-a-workshop",
+  noIndex: true,
+});
 
 export default function JoinAWorkshopPage() {
   return (

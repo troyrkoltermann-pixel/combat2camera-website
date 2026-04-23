@@ -10,12 +10,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "weekly",
       priority: 1,
+      images: [`${siteConfig.url}${siteConfig.defaultOgImage.url}`],
     },
     {
       url: `${siteConfig.url}/founder-story`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
+      images: [`${siteConfig.url}/assets/photos/troy_koltermann%20Headshot.JPG`],
     },
     {
       url: `${siteConfig.url}/about`,

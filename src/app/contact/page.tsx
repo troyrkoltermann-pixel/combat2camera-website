@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/json-ld";
 import { PageShell } from "@/components/page-shell";
-import { breadcrumbJsonLd, siteConfig } from "@/lib/seo";
+import { breadcrumbJsonLd, buildMetadata, pageJsonLd, siteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description:
-    "Contact Combat 2 Camera about veteran photography programs, partnerships, support, workshops, retreats, and exhibitions.",
-  alternates: {
-    canonical: "/contact",
-  },
-};
+const contactDescription =
+  "Contact Combat 2 Camera about veteran photography programs, partnerships, support, exhibitions, and future workshops.";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Contact Combat 2 Camera",
+  description: contactDescription,
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (
@@ -24,6 +24,14 @@ export default function ContactPage() {
           { name: "Home", url: siteConfig.url },
           { name: "Contact", url: `${siteConfig.url}/contact` },
         ])}
+      />
+      <JsonLd
+        data={pageJsonLd({
+          type: "ContactPage",
+          name: "Contact Combat 2 Camera",
+          description: contactDescription,
+          path: "/contact",
+        })}
       />
       <section className="content-section contact-panel">
         <div>

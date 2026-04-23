@@ -1,19 +1,15 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { SiteFooter } from "@/components/site-footer";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Donations Opening Soon",
   description:
     "Combat 2 Camera is preparing to accept donations once federal 501(c)(3) confirmation is complete.",
-  alternates: {
-    canonical: "/donate",
-  },
-  robots: {
-    index: false,
-    follow: true,
-  },
-};
+  path: "/donate",
+  noIndex: true,
+});
 
 export default function DonatePage() {
   return (

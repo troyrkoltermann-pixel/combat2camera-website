@@ -1,16 +1,39 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/json-ld";
 import { PageShell } from "@/components/page-shell";
-import { breadcrumbJsonLd, siteConfig } from "@/lib/seo";
+import { breadcrumbJsonLd, buildMetadata, faqJsonLd, pageJsonLd, siteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About",
-  description:
-    "Learn about Combat 2 Camera, a registered Utah charity using photography-centered programs to support veterans, service members, and military families.",
-  alternates: {
-    canonical: "/about",
+const aboutDescription =
+  "Learn about Combat 2 Camera, a registered Utah charity using photography-centered programs to support veterans, service members, and military families.";
+
+const aboutFaqs = [
+  {
+    question: "What is Combat 2 Camera?",
+    answer:
+      "Combat 2 Camera is a Utah charity using photography-centered programs to help veterans reconnect through structured learning, creative expression, and community.",
   },
-};
+  {
+    question: "Who does Combat 2 Camera serve?",
+    answer:
+      "Combat 2 Camera serves veterans, active duty service members, National Guard and Reserve members, and military families, with veterans as the primary focus.",
+  },
+  {
+    question: "Where is Combat 2 Camera based?",
+    answer:
+      "Combat 2 Camera is based in Utah and is building programs that can reach veterans and military-connected families across the region.",
+  },
+  {
+    question: "Are donations open yet?",
+    answer:
+      "Combat 2 Camera is awaiting federal 501(c)(3) confirmation. Donation functionality will be activated after that determination is complete.",
+  },
+];
+
+export const metadata: Metadata = buildMetadata({
+  title: "About Combat 2 Camera",
+  description: aboutDescription,
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
@@ -25,6 +48,15 @@ export default function AboutPage() {
           { name: "About", url: `${siteConfig.url}/about` },
         ])}
       />
+      <JsonLd
+        data={pageJsonLd({
+          type: "AboutPage",
+          name: "About Combat 2 Camera",
+          description: aboutDescription,
+          path: "/about",
+        })}
+      />
+      <JsonLd data={faqJsonLd(aboutFaqs)} />
       <section className="content-section two-column-content">
         <div>
           <p className="eyebrow">Mission</p>
@@ -66,6 +98,15 @@ export default function AboutPage() {
             veterans and military-connected families across the region.
           </p>
         </article>
+      </section>
+
+      <section className="content-section info-cards">
+        {aboutFaqs.map((item) => (
+          <article key={item.question}>
+            <h2>{item.question}</h2>
+            <p>{item.answer}</p>
+          </article>
+        ))}
       </section>
     </PageShell>
   );

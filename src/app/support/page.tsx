@@ -3,16 +3,16 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/components/json-ld";
 import { PageShell } from "@/components/page-shell";
 import { impactHighlights } from "@/data/home";
-import { breadcrumbJsonLd, siteConfig } from "@/lib/seo";
+import { breadcrumbJsonLd, buildMetadata, pageJsonLd, siteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Support",
-  description:
-    "Support Combat 2 Camera's photography workshops, retreats, exhibitions, and mentorship for veterans and military families.",
-  alternates: {
-    canonical: "/support",
-  },
-};
+const supportDescription =
+  "Support Combat 2 Camera's photography workshops, equipment access, exhibitions, and veteran-focused growth as the organization moves toward launch.";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Support Combat 2 Camera",
+  description: supportDescription,
+  path: "/support",
+});
 
 export default function SupportPage() {
   return (
@@ -26,6 +26,13 @@ export default function SupportPage() {
           { name: "Home", url: siteConfig.url },
           { name: "Support", url: `${siteConfig.url}/support` },
         ])}
+      />
+      <JsonLd
+        data={pageJsonLd({
+          name: "Support Combat 2 Camera",
+          description: supportDescription,
+          path: "/support",
+        })}
       />
       <section className="content-section support-list">
         <article>

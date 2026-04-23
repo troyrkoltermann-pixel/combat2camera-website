@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/components/json-ld";
 import { PageShell } from "@/components/page-shell";
 import { programs } from "@/data/home";
-import { breadcrumbJsonLd, siteConfig } from "@/lib/seo";
+import { breadcrumbJsonLd, buildMetadata, pageJsonLd, siteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Programs",
-  description:
-    "Explore Combat 2 Camera programs including veteran photography workshops, retreats, exhibitions, and mentorship.",
-  alternates: {
-    canonical: "/programs",
-  },
-};
+const programsDescription =
+  "Explore Combat 2 Camera programs including veteran photography workshops, exhibitions, mentorship, and hands-on experiences built to restore focus and connection.";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Veteran Photography Programs",
+  description: programsDescription,
+  path: "/programs",
+});
 
 export default function ProgramsPage() {
   return (
@@ -25,6 +25,14 @@ export default function ProgramsPage() {
           { name: "Home", url: siteConfig.url },
           { name: "Programs", url: `${siteConfig.url}/programs` },
         ])}
+      />
+      <JsonLd
+        data={pageJsonLd({
+          type: "CollectionPage",
+          name: "Veteran Photography Programs",
+          description: programsDescription,
+          path: "/programs",
+        })}
       />
       <section className="content-section program-detail-grid">
         {programs.map((program) => (
