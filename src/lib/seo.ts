@@ -27,7 +27,7 @@ export const organizationJsonLd = {
   alternateName: siteConfig.alternateName,
   url: siteConfig.url,
   email: siteConfig.email,
-  logo: `${siteConfig.url}/assets/logo/Logo%20C2C.png`,
+  logo: `${siteConfig.url}/assets/logo/combat2camera-logo.svg`,
   description: siteConfig.description,
   foundingLocation: {
     "@type": "Place",

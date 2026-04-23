@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/json-ld";
 import { PageShell } from "@/components/page-shell";
-import { impactItems } from "@/data/home";
+import { impactHighlights } from "@/data/home";
 import { breadcrumbJsonLd, siteConfig } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -28,13 +28,15 @@ export default function SupportPage() {
         ])}
       />
       <section className="content-section support-list">
-        {impactItems.map((item) => (
-          <article key={item.label}>
-            <p className="eyebrow">{item.label}</p>
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
-          </article>
-        ))}
+        <article>
+          <p className="eyebrow">Impact So Far</p>
+          <h2>Combat 2 Camera is already delivering structured experiences for veterans.</h2>
+          <ul>
+            {impactHighlights.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </article>
       </section>
       <section className="content-section support-cta-panel">
         <h2>Want to support early?</h2>

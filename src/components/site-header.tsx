@@ -12,10 +12,10 @@ export function SiteHeader() {
       <div className="main-nav">
         <Link className="brand" href="/">
           <Image
-            src="/assets/logo/Horizontal Layout C2C.eps"
+            src="/assets/logo/combat2camera-logo-Horizontal.svg"
             alt="Combat 2 Camera logo"
-            width={280}
-            height={120}
+            width={720}
+            height={192}
             priority
           />
         </Link>

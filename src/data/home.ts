@@ -82,23 +82,10 @@ export const galleryImages = [
   },
 ];
 
-export const impactItems = [
-  {
-    label: "Equip",
-    title: "Cameras, supplies, and creative tools",
-    description:
-      "Support helps put photography tools into veterans' hands and removes the cost barrier from participation.",
-  },
-  {
-    label: "Gather",
-    title: "Workshops, retreats, and guided field experiences",
-    description:
-      "Funding helps create structured spaces where veterans can learn, slow down, and build connection through image-making.",
-  },
-  {
-    label: "Exhibit",
-    title: "Public shows and community storytelling",
-    description:
-      "Exhibitions give veterans a platform to share their work, be recognized, and reconnect with the broader community.",
-  },
+export const impactHighlights = [
+  "12 small group events delivered through a structured mix of classroom and hands-on experiences",
+  "Approximately 50 veterans engaged across multiple sessions",
+  "4 classroom-based workshops focused on photography fundamentals and building technical confidence",
+  "8 real-world photography experiences capturing nature, architecture, and live sports",
+  "Small group environments designed to build connection, reduce isolation, and encourage shared experience",
 ];

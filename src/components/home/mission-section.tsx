@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function MissionSection() {
   return (
     <>
@@ -27,6 +29,9 @@ export function MissionSection() {
               reduce isolation, and rediscover purpose through structured
               experiences that create lasting impact.
             </p>
+            <Link className="text-link" href="/founder-story">
+              Read the founder&apos;s full story
+            </Link>
           </div>
         </div>
       </section>
