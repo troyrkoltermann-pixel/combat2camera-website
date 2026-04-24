@@ -5,7 +5,7 @@ export function SiteHeader() {
   return (
     <header className="site-header" aria-label="Primary navigation">
       <div className="utility-bar">
-        <span>Registered Utah charity. 501(c)(3) determination pending.</span>
+        <span>501(c)(3) approved public charity under 509(a)(2).</span>
         <a href="mailto:info@combat2camera.org">info@combat2camera.org</a>
       </div>
 

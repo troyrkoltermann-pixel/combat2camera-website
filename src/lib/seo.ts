@@ -17,6 +17,7 @@ export const siteConfig = {
   },
   founder: "Troy R. Koltermann",
   foundingLocation: "Utah",
+  nonprofitStatusText: "Approved 501(c)(3) public charity under 509(a)(2)",
   keywords: [
     "veteran photography therapy",
     "photography workshops for veterans",
@@ -48,7 +49,7 @@ export const organizationJsonLd = {
   founder: {
     "@id": `${siteConfig.url}/founder-story#founder`,
   },
-  nonprofitStatus: "Nonprofit501c3Pending",
+  nonprofitStatus: "https://schema.org/Nonprofit501c3",
   contactPoint: [
     {
       "@type": "ContactPoint",

@@ -7,7 +7,7 @@ export async function GET() {
 
 ${siteConfig.description}
 
-Current organizational status: Registered Utah charity. Federal 501(c)(3) determination pending as of April 23, 2026.
+Current organizational status: ${siteConfig.nonprofitStatusText}. IRS approval received on April 23, 2026.
 
 Primary audience:
 - Veterans

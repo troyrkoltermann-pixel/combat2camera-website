@@ -722,12 +722,12 @@ img {
 }
 
 .interior-hero h1 {
-  max-width: 13ch;
+  max-width: 16ch;
   margin: 0;
   color: var(--navy-dark);
-  font-size: clamp(3.3rem, 7vw, 7rem);
+  font-size: clamp(2.9rem, 5.8vw, 5.8rem);
   letter-spacing: -0.06em;
-  line-height: 0.94;
+  line-height: 0.98;
 }
 
 .interior-hero p:not(.eyebrow) {
@@ -769,6 +769,20 @@ img {
   gap: 1rem;
 }
 
+.about-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.about-list li::marker {
+  color: var(--red);
+}
+
 .prose-block p,
 .info-cards p,
 .program-detail-grid p,
@@ -782,6 +796,7 @@ img {
 }
 
 .info-cards,
+.about-pillars,
 .program-detail-grid,
 .support-list {
   display: grid;
@@ -794,6 +809,7 @@ img {
 }
 
 .info-cards article,
+.about-pillars article,
 .program-detail-grid article,
 .support-list article,
 .support-cta-panel,
@@ -808,6 +824,12 @@ img {
 .program-detail-grid article,
 .support-list article {
   min-height: 18rem;
+}
+
+.about-pillars article {
+  display: grid;
+  gap: 1rem;
+  min-height: 16rem;
 }
 
 .support-cta-panel,
@@ -907,12 +929,12 @@ img {
 }
 
 .story-hero h1 {
-  max-width: 12ch;
+  max-width: 13ch;
   margin: 0;
   color: var(--navy-dark);
-  font-size: clamp(3.5rem, 7vw, 7rem);
+  font-size: clamp(3rem, 5.8vw, 5.9rem);
   letter-spacing: -0.06em;
-  line-height: 0.94;
+  line-height: 0.98;
 }
 
 .story-hero p:not(.eyebrow) {
@@ -949,10 +971,9 @@ img {
 
 .story-article p:nth-of-type(8),
 .story-article p:nth-of-type(9),
-.story-article p:nth-of-type(13),
 .story-article p:nth-of-type(14),
-.story-article p:nth-of-type(21),
-.story-article p:nth-of-type(22) {
+.story-article p:nth-of-type(22),
+.story-article p:nth-of-type(23) {
   color: var(--navy);
   font-size: clamp(1.55rem, 3vw, 2.2rem);
   font-weight: 700;
@@ -1013,6 +1034,7 @@ img {
   .program-grid,
   .testimonial-grid,
   .info-cards,
+  .about-pillars,
   .program-detail-grid,
   .support-list {
     grid-template-columns: 1fr 1fr;
@@ -1072,6 +1094,7 @@ img {
   .testimonial-grid,
   .gallery-strip,
   .info-cards,
+  .about-pillars,
   .program-detail-grid,
   .support-list {
     grid-template-columns: 1fr;

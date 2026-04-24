@@ -8,10 +8,10 @@ export function ImpactSection() {
         <div className="section-heading">
           <h2>Impact so far</h2>
           <p>
-            Combat 2 Camera is currently in its pre-launch phase, already creating meaningful
-            change through early workshops and hands-on experiences. What started as a personal
-            journey, and was expanded through a Hilton Thrive Sabbatical, has grown into a proven
-            model to help veterans reconnect, rebuild, and move forward.
+            Combat 2 Camera is an approved 501(c)(3) public charity under 509(a)(2), already
+            creating meaningful change through early workshops and hands-on experiences. What
+            started as a personal journey, and was expanded through a Hilton Thrive Sabbatical, has
+            grown into a proven model to help veterans reconnect, rebuild, and move forward.
           </p>
         </div>
         <figure className="impact-photo-card">
@@ -51,9 +51,8 @@ export function ImpactSection() {
 
       <div className="impact-closing">
         <p>
-          As Combat 2 Camera moves toward its official launch following 501(c)(3) approval, the
-          focus is on expanding access, increasing reach, and building a sustainable program that
-          can support more veterans.
+          With 501(c)(3) approval now in place, the focus is on expanding access, increasing
+          reach, and building a sustainable program that can support more veterans.
         </p>
         <p>Early support plays a critical role in helping bring this next phase to life.</p>
       </div>

@@ -19,7 +19,7 @@ export default function SupportPage() {
     <PageShell
       eyebrow="Support The Mission"
       title="Help create photography-based healing opportunities for veterans."
-      intro="Donations will open after federal 501(c)(3) confirmation. Until then, supporters and potential partners can contact Combat 2 Camera directly."
+      intro="Combat 2 Camera is now an approved 501(c)(3) public charity under 509(a)(2). Online donations are being finalized, and supporters and potential partners can contact Combat 2 Camera directly in the meantime."
     >
       <JsonLd
         data={breadcrumbJsonLd([

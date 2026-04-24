@@ -6,7 +6,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Donations Opening Soon",
   description:
-    "Combat 2 Camera is preparing to accept donations once federal 501(c)(3) confirmation is complete.",
+    "Combat 2 Camera is an approved 501(c)(3) public charity under 509(a)(2) and is preparing to activate online donations.",
   path: "/donate",
   noIndex: true,
 });
@@ -16,11 +16,11 @@ export default function DonatePage() {
     <main className="donate-page" id="main-content">
       <section className="donate-panel">
         <p className="eyebrow">Donations Opening Soon</p>
-        <h1>Combat 2 Camera is preparing to accept donations.</h1>
+        <h1>Combat 2 Camera is preparing to activate online donations.</h1>
         <p>
-          We are a registered Utah charity and are awaiting federal 501(c)(3)
-          confirmation. Donation functionality will be activated as soon as the
-          IRS determination is complete.
+          Combat 2 Camera has received 501(c)(3) approval as a public charity
+          under 509(a)(2). Online donation functionality is now being finalized
+          and will be activated on the website soon.
         </p>
         <p>
           For early support, partnership conversations, or questions, contact us
